@@ -9,44 +9,103 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
             background-color: #f4f4f4;
         }
         header {
             background-color: #2c3e50;
             color: white;
             padding: 20px;
+            text-align: center;
+            font-size: 24px;
         }
-        section {
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .banner {
+            background: url('https://source.unsplash.com/1600x600/?fish,farm') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
             padding: 20px;
+        }
+        .service {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
         footer {
             background-color: #2c3e50;
             color: white;
+            text-align: center;
             padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Esamec Fish Farm</h1>
-        <p>Your trusted source for quality fish farming</p>
+        Esamec Fish Farm
     </header>
-    <section>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="banner">
+        Quality Fish Farming for a Sustainable Future
+    </div>
+    <div class="container" id="about">
         <h2>About Us</h2>
         <p>Esamec Fish Farm is dedicated to providing high-quality, sustainable fish farming solutions.</p>
-        <h2>Our Services</h2>
-        <ul>
-            <li>Freshwater Fish Farming</li>
-            <li>Fish Hatchery Services</li>
-            <li>Consultation & Training</li>
-            <li>Fish Feed Supply</li>
-        </ul>
-    </section>
-    <footer>
+    </div>
+    <div class="services" id="services">
+        <div class="service">
+            <h3>Freshwater Fish Farming</h3>
+            <p>Providing top-quality freshwater fish for consumption.</p>
+        </div>
+        <div class="service">
+            <h3>Fish Hatchery Services</h3>
+            <p>We breed and supply healthy fish fingerlings.</p>
+        </div>
+        <div class="service">
+            <h3>Consultation & Training</h3>
+            <p>Helping farmers improve their fish farming techniques.</p>
+        </div>
+        <div class="service">
+            <h3>Fish Feed Supply</h3>
+            <p>Providing high-quality feeds to ensure optimal fish growth.</p>
+        </div>
+    </div>
+    <footer id="contact">
         <p>Contact us: info@esamecfishfarm.com | Phone: 123-456-7890</p>
         <p>&copy; 2024 Esamec Fish Farm. All rights reserved.</p>
     </footer>
